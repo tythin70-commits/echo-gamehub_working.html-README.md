@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GameHub — Gaming Portal</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#080b12;color:#fff}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:#101522;border-bottom:1px solid #252c3b;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:900;letter-spacing:.5px}.logo span{color:#6c5ce7}
+nav a{color:#cbd2e1;text-decoration:none;margin-left:22px;font-weight:700}nav a:hover{color:#fff}
+.hero{padding:55px 28px;text-align:center;background:radial-gradient(circle at 50% 0,#28204e 0,#101522 48%,#080b12 100%)}
+.hero h1{font-size:48px;margin:0 0 12px}.hero p{color:#aeb8ca;font-size:18px;margin:0 auto 25px;max-width:650px}
+.wrap{max-width:1050px;margin:auto;padding:30px 20px}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#121826;border:1px solid #293246;border-radius:18px;padding:25px;box-shadow:0 12px 30px #0005}
+.icon{font-size:55px}.card h2{margin:12px 0 8px}.card p{color:#aeb8ca;line-height:1.5}
+.btn{display:inline-block;padding:13px 19px;border-radius:10px;background:#6c5ce7;color:white;text-decoration:none;font-weight:900;margin-top:10px}
+.btn:hover{filter:brightness(1.15);transform:translateY(-1px)}
+.secondary{background:#242d3e;margin-left:8px}.note{margin-top:25px;color:#8f9bb0;font-size:14px;text-align:center}
+footer{text-align:center;color:#778399;padding:35px}
+@media(max-width:600px){.hero h1{font-size:36px}nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">GAME<span>HUB</span></div>
+  <nav><a href="#games">Games</a><a href="https://www.epicgames.com/" target="_blank" rel="noopener">Epic</a><a href="https://www.roblox.com/" target="_blank" rel="noopener">Roblox</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Your Gaming Portal</h1>
+  <p>Choose a game below. The Play buttons take you to the official gaming services, where the game or cloud service can actually launch.</p>
+</section>
+
+<main class="wrap" id="games">
+  <div class="games">
+    <article class="card">
+      <div class="icon">☁️</div>
+      <h2>Xbox Cloud Gaming</h2>
+      <p>Launch Xbox Cloud Gaming in your browser and stream supported games from the cloud on a compatible device.</p>
+      <a class="btn" href="https://www.xbox.com/play" target="_blank" rel="noopener">PLAY ON XBOX CLOUD</a>
+      <a class="btn secondary" href="https://www.xbox.com/en-US/cloud-gaming" target="_blank" rel="noopener">XBOX CLOUD</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">⬜</div>
+      <h2>Roblox</h2>
+      <p>Open Roblox and choose an experience. Roblox's official player/app handles the actual game launch.</p>
+      <a class="btn" href="https://www.roblox.com/" target="_blank" rel="noopener">PLAY ROBLOX</a>
+      <a class="btn secondary" href="https://www.roblox.com/discover" target="_blank" rel="noopener">GAMES</a>
+    </article>
+  </div>
+  <p class="note">This portal does not copy or host the games. It provides buttons to the official services.</p>
+</main>
+<footer>GameHub • Independent gaming portal concept</footer>
+</body>
+</html>
